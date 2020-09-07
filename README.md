@@ -27,7 +27,7 @@ make all
 ./run_docker.sh
 
 # To upload image to docker hub
-upload_docker.sh
+./upload_docker.sh
 
 # To run the container in local minikube from docker hub
 ./run_kubernetes.sh
