@@ -2,3 +2,5 @@
 
 ## Operationalize a Machine Learning Microservice API
 ---
+
+[![ccliver](https://circleci.com/github/ccliver/udacity-devops-project-4.svg?style=svg)](<LINK>)
