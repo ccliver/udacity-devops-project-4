@@ -1,0 +1,32 @@
+(.devops) [carl@Carls-MacBook-Air-2:udacity-devops-project-4 (master)]$ ./run_kubernetes.sh
+😄  minikube v1.13.0 on Darwin 10.15.5
+✨  Using the docker driver based on existing profile
+
+⛔  Requested memory allocation (1991MB) is less than the recommended minimum 2000MB. Deployments may fail.
+
+👍  Starting control plane node minikube in cluster minikube
+🏃  Updating the running docker "minikube" container ...
+🐳  Preparing Kubernetes v1.19.0 on Docker 19.03.8 ...
+🔎  Verifying Kubernetes components...
+🌟  Enabled addons: default-storageclass, storage-provisioner
+
+❗  /Users/carl/google-cloud-sdk/bin/kubectl is version 1.10.7, which may have incompatibilites with Kubernetes 1.19.0.
+💡  Want kubectl v1.19.0? Try 'minikube kubectl -- get pods -A'
+🏄  Done! kubectl is now configured to use "minikube" by default
+replicationcontroller "udacity-project-4" created
+pod "udacity-project-4" created
+NAME                      READY     STATUS              RESTARTS   AGE
+udacity-project-4         0/1       ContainerCreating   0          0s
+udacity-project-4-rjgzp   0/1       ContainerCreating   0          0s
+(.devops) [carl@Carls-MacBook-Air-2:udacity-devops-project-4 (master)]$ Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
+(.devops) [carl@Carls-MacBook-Air-2:udacity-devops-project-4 (master)]$ ./make_prediction.sh
+Port: 8000
+Handling connection for 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+(.devops) [carl@Carls-MacBook-Air-2:udacity-devops-project-4 (master)]$
